@@ -1,0 +1,21 @@
+@font-face {
+	font-family: 'Soyuz Grotesk'; 
+    font-style: normal;
+    font-weight: 700;
+    src: 
+          url('../fonts/soyuz_grotesk_bold-webfont.woff') format('woff'),
+          url('../fonts/soyuz_grotesk_bold-webfont.woff2') format('woff2');
+  }
+
+
+
+  @font-face {
+    font-family: 'Street Soul Cyrillic';
+    font-style: normal;
+    font-weight: 400;
+
+    src: local("Street Soul Cyrillic Regular"),
+
+    url("../fonts/streetsoulcyrillic_regular-webfont.woff") format("woff"),
+    url("../fonts/streetsoulcyrillic_regular-webfont.woff2") format("woff2");
+  }

@@ -1,0 +1,598 @@
+
+
+.section__brend{
+    background-color: #141414;
+
+    #brend{
+
+        padding: 60px 0px 30px 0px;
+
+        @media (max-width: $breakpoint1200) {
+            padding: 60px 0px 0px 0px;
+       }
+
+    }
+
+    & .brend{
+
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 40px ;
+
+        padding: 60px 0px 160px 0px;
+        flex-wrap: wrap;
+
+        @media (max-width: $breakpoint1200) {
+            padding: 60px 0px;
+       }
+
+        &__text{
+            font-family: 'Segoe UI';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 24px;
+            line-height: 36px;
+            letter-spacing: -0.5px;         
+            color: #FFFFFF;
+
+            @media (max-width: $breakpoint480) {
+                font-size: 20px;
+            }
+
+            &-link{
+                font-family: 'Segoe UI';
+                font-style: normal;
+                font-weight: 400;
+                font-size: 24px;
+                line-height: 36px;
+                letter-spacing: -0.5px;         
+                color: #FFFFFF;
+                text-decoration: underline;  
+                transition: all ease .3s;  
+
+                @media (max-width: $breakpoint480) {
+                    font-size: 20px;
+                }
+
+
+                &:hover{
+                    color: #75FB5E;
+                }
+
+            }
+
+        }
+
+        &__item{
+
+            flex: 0 1 30%;
+            width: 100%;
+            max-width: 100%;
+            overflow: hidden;
+
+            @media (max-width: $breakpoint1200) {
+                flex: 0 1 45%;
+            }
+
+            @media (max-width: $breakpoint770) {
+                flex: 0 1 100%;
+           }
+
+           &:hover{
+            
+            & .brend__item-img{
+
+                transform: scale(1.05);
+            }
+
+            & .brend__item-title{
+                color: #75FB5E;
+            }
+
+           }
+
+
+            &-img{
+                border-radius: 9px;
+                transition: all ease .3s;
+                width: 100%;
+                @media (max-width: $breakpoint1200) {
+                    flex: 0 1 100%;
+                    width: 100%;
+                    height: auto;
+                }
+            }
+
+            &-title{
+                transition: all ease .3s;
+                font-family: 'Montserrat';
+                font-style: normal;
+                font-weight: 700;
+                font-size: 35px;
+                line-height: 42px;
+                padding: 20px 0px;
+                letter-spacing: -0.4px;
+                
+                color: #FFFFFF;
+
+                @media (max-width: $breakpoint770) {
+                     font-size: 24px;
+                }
+
+            }
+
+            &-subtitle{
+                font-family: 'Roboto';
+                font-style: normal;
+                font-weight: 400;
+                font-size: 20px;
+                line-height: 25px;
+                letter-spacing: -0.5px;
+                
+                color: #8F8F8F;
+
+                @media (max-width: $breakpoint480) {
+                    font-size: 18px;
+               }
+            }
+
+        }
+
+    }
+}
+
+.section__desc{
+
+    & .approach{
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
+
+        padding-top: 100px;
+
+        @media (max-width: $breakpoint1200) {
+            padding-top: 60px;
+
+            gap: 30px;
+        }
+
+
+
+        &__title{
+            font-family: 'Montserrat';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 40px;
+            line-height: 46px;
+            letter-spacing: -0.8px;
+            
+            color: #141414;
+
+            @media (max-width: $breakpoint770) {
+                font-size: 32px;
+            }
+
+            @media (max-width: $breakpoint480) {
+                font-size: 25px;
+                line-height: 140%;
+            }
+        }
+
+        &__subtitle{
+            font-family: 'Roboto';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 24px;
+            line-height: 36px;    
+            letter-spacing: -0.5px;
+            color: #141414;
+            max-width: 850px;
+
+            @media (max-width: $breakpoint770) {
+                font-size: 22px;
+            }
+
+            @media (max-width: $breakpoint480) {
+                font-size: 20px;
+            }
+
+            &-link{
+
+                font-family: 'Roboto';
+                font-style: normal;
+                font-weight: 400;
+                font-size: 24px;
+                line-height: 36px;
+                letter-spacing: -0.5px;
+                text-decoration: underline;
+                color: #141414;
+                transition: all ease .3s;
+
+                
+
+                &:hover{
+                    color: #75FB5E;
+                }
+            }
+
+        }
+
+    }
+
+    & .strategy{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 30px;
+
+        padding-top: 90px;
+
+        @media (max-width: $breakpoint1200) {
+            padding-top: 60px;
+        }
+
+        @media (max-width: $breakpoint770) {
+          flex-direction: column;
+          justify-content: flex-start;
+          align-items: flex-start;
+        }
+
+
+        &__item{
+            display: flex;
+            flex-direction: column;
+
+            &-label{
+                margin-bottom: 13px;
+                 
+            & img{
+                margin-top: -15px;
+
+                @media (max-width: $breakpoint770) {
+                    max-width: 200px;
+                }
+
+                @media (max-width: $breakpoint480) {
+                    max-width: 180px;
+                    margin-top: -10px;
+                }
+
+            }
+
+            }
+
+            &-title2{
+                font-family: 'Montserrat';
+                font-style: normal;
+                font-weight: 700;
+                font-size: 30px;
+                line-height: 140%;
+                letter-spacing: -0.8px;
+                color: #141414;
+    
+
+
+            @media (max-width: $breakpoint770) {
+                font-size: 28px;
+            }
+
+            @media (max-width: $breakpoint480) {
+                font-size: 25px;
+            }
+
+
+
+            }
+
+
+            &-title{
+                font-family: 'Montserrat';
+                font-style: normal;
+                font-weight: 700;
+                font-size: 30px;
+                line-height: 140%;
+                letter-spacing: -0.8px;
+                color: #141414;
+
+                margin-bottom: 13px;
+    
+
+
+            @media (max-width: $breakpoint770) {
+                font-size: 28px;
+            }
+
+            @media (max-width: $breakpoint480) {
+                font-size: 25px;
+                margin-bottom: 10px;
+            }
+
+
+
+            }
+
+            &-subtitle{
+                font-family: 'Roboto';
+                font-style: normal;
+                font-weight: 400;
+                font-size: 24px;
+                line-height: 36px;
+                letter-spacing: -0.5px; 
+                color: #141414;
+
+               
+
+                @media (max-width: $breakpoint770) {
+                    font-size: 22px;
+                }
+    
+                @media (max-width: $breakpoint480) {
+                    font-size: 20px;
+                  
+                }
+
+            }
+
+        }
+
+    }
+
+    & .copm{
+        margin-top: 60px;
+        background: #FAFAFA;
+
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+
+        &__svg{
+           flex: 0 1 18%;
+           height: auto;
+           width: 100%;
+
+           @media (max-width: $breakpoint992) {
+            max-width: 200px;
+        }
+
+        @media (max-width: $breakpoint480) {
+            max-width: 150px;
+
+        }
+
+        animation: blink random()*2 + 1s ease-in-out infinite; 
+
+        @keyframes blink {
+
+            from{
+                opacity: .6;
+            }
+
+            50% {
+                opacity: 1;
+
+            }
+            
+            to{
+                opacity: .6;
+            }
+        }
+
+
+        }
+
+    }
+
+}
+
+.section__info{
+    transition: all ease .3s;
+    padding: 150px 0px;
+    position: relative;
+    overflow: hidden;
+
+    @media (max-width: $breakpoint992) {
+        padding: 130px 0px;
+    }
+
+    @media (max-width: $breakpoint770) {
+        padding: 80px 0px ;
+    }
+
+    @media (max-width: $breakpoint480) {
+        padding: 60px 0px;
+    }
+
+    &:hover{
+
+        & .info__hover{
+            transform: translateY(0%);
+        }
+
+    }
+
+
+
+
+    
+
+    
+    .info{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        
+
+        &__hover{
+            position: absolute;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: #a7a7a729;
+            z-index: 0;
+
+            transform: translateY(100%);
+ 
+            transition: all .6s ease-in-out, visibility 1ms;
+
+        }
+
+        &__title{
+            font-family: 'Montserrat';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 32px;
+            line-height: 62px;
+            align-items: center;
+            text-align: center;
+            letter-spacing: -0.4px; 
+            color: #141414;
+            z-index: 10;
+
+            @media (max-width: $breakpoint1200) {
+                font-size: 30px;
+                line-height: 60px;
+            }
+    
+            @media (max-width: $breakpoint770) {
+                font-size: 27px;
+                max-width: 380px;
+                line-height: 150%;
+            }
+    
+            @media (max-width: $breakpoint480) {
+                flex-wrap: wrap;
+                font-size: 25px;
+                line-height: 40px;
+            }
+            
+        }
+
+    }
+
+}
+
+.section__clients{
+
+    padding: 100px 0px;
+
+    @media (max-width: $breakpoint1200) {
+        padding: 80px 0px;
+    }
+
+    @media (max-width: $breakpoint770) {
+        padding: 60px 0px;
+    }
+
+    & .clients{
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+
+        &__title{
+            font-family: 'Montserrat';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 40px;
+            line-height: 46px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            letter-spacing: -0.8px;
+            
+            color: #141414;
+
+            @media (max-width: $breakpoint770) {
+                font-size: 32px;
+            }
+
+            @media (max-width: $breakpoint480) {
+                font-size: 24px;
+            }
+
+        }
+
+        &__item{
+            margin-top: 50px;
+
+            display: flex;
+            flex-direction: column;
+
+            &-title{
+                font-family: 'Roboto';
+                font-style: normal;
+                font-weight: 400;
+                font-size: 30px;
+                line-height: 36px;
+                letter-spacing: -0.4px;
+                
+                color: #141414;
+
+                max-width: 825px;
+
+                @media (max-width: $breakpoint770) {
+                    font-size: 25px;
+                }
+    
+                @media (max-width: $breakpoint480) {
+                    font-size: 21px;
+                }
+            }
+
+            &-info{
+                display: flex;
+                align-items: center;
+                gap: 16px;
+
+                margin-top: 23px;
+
+                &-titles{
+
+
+                    &-title{
+                        font-family: 'Roboto';
+                        font-style: normal;
+                        font-weight: 400;
+                        font-size: 20px;
+                        line-height: 28px;
+                        letter-spacing: -0.42px;
+                        
+                        color: #141414;
+
+                        @media (max-width: $breakpoint480) {
+                            font-size: 18px;
+                        }
+
+                    }
+    
+                    &-subtitle{
+                        font-family: 'Roboto';
+                        font-style: normal;
+                        font-weight: 400;
+                        font-size: 20px;
+                        line-height: 24px;
+                        letter-spacing: -0.7px;
+                        
+                        color: rgba(34, 34, 34, 0.6);
+
+                        @media (max-width: $breakpoint480) {
+                            font-size: 18px;
+                        }
+                        
+                    }
+
+                }
+
+            }
+        }
+
+    }
+
+}

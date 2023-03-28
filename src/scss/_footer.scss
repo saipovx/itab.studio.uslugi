@@ -1,0 +1,226 @@
+.section__footer{
+
+    padding: 20px 0px 150px 0px;
+
+    @media (max-width: $breakpoint992) {
+        padding: 20px 0px 80px 0px;
+    }
+
+    @media (max-width: $breakpoint560) {
+        padding: 20px 0px 60px 0px;
+    }
+
+
+
+    .footer{
+        display: flex;
+        justify-content: center;
+        gap: 100px;
+
+
+        @media (max-width: $breakpoint992) {
+            gap: 50px;
+        }
+
+        @media (max-width: $breakpoint560) {
+            flex-wrap: wrap;
+            justify-content: flex-start;
+            // flex-direction: column;
+            gap: 30px;
+        }
+
+        &__li{
+            display: flex;
+            align-items: center;
+            gap: 2px;
+        }
+
+        &__label-hr{
+            border: 1px solid #828282 ;
+        }
+
+        &__label{
+
+            display: flex;
+            flex-direction: column;
+            gap: 4px;
+
+            &:hover{
+
+                & .footer__bottom-links-link{
+                    color: #68EC50;
+                }
+
+                & .footer__label-hr{
+                    border: 1px solid #68EC50 ;
+                }
+
+            }
+
+        }
+
+        &__ul{
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+
+            @media (max-width: $breakpoint770) {
+                gap: 10px;
+            }
+            
+
+            & li{
+             list-style-type: none;
+            }
+
+            & .link__hover{
+
+                display: flex;
+                flex-direction: column;
+
+                gap: 4px;
+                max-width: fit-content;
+
+            }
+
+            & .footer__ul-link-hr{
+                border: 1px solid #828282;
+            }
+
+            & .link__hover:hover{
+                
+                & .footer__ul-link{
+                    color: #68EC50;
+                    transition: all ease .3s;
+                }
+
+                & .footer__ul-link-hr{
+                    border: 1px solid #68EC50;
+                    transition: all ease .3s;
+                }
+
+            }
+
+            &-title{
+                font-family: 'Roboto';
+                font-style: normal;
+                font-weight: 700;
+                font-size: 24px;
+                line-height: 36px;
+                letter-spacing: -0.5px;  
+                color: #828282;
+
+                @media (max-width: $breakpoint770) {
+                    font-size: 22px;
+                }
+        
+
+            }
+
+            &-link{
+                font-family: 'Roboto';
+                font-style: normal;
+                font-weight: 400;
+                font-size: 20px;
+                line-height: 24px;
+                letter-spacing: -0.42px;
+                color: #828282;
+                transition: all ease .3s;
+
+                &:hover{
+                    color: #68EC50;
+                }
+
+                @media (max-width: $breakpoint770) {
+                    font-size: 18px;
+                    line-height: 140%;
+                }
+
+            }
+
+            &-text{
+                font-family: 'Roboto';
+                font-style: normal;
+                font-weight: 400;
+                font-size: 20px;
+                line-height: 24px;
+                letter-spacing: -0.42px;
+                color: #828282;
+            }
+        }
+
+        &__bottom{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 5px;
+
+            margin-top: 44px;
+
+            @media (max-width: $breakpoint992) {
+                flex-wrap: wrap;
+            }
+
+            @media (max-width: $breakpoint560) {
+                justify-content: flex-start;
+                align-items: flex-start;
+                gap: 15px;
+            }
+
+            &-text{
+                font-family: 'Roboto';
+                font-style: normal;
+                font-weight: 400;
+                font-size: 20px;
+                line-height: 24px;
+                letter-spacing: -0.42px;
+                color: #828282;
+
+                @media (max-width: $breakpoint560) {
+                    font-size: 18px;
+                }
+
+            }
+
+            &-links{
+                display: flex;
+                align-items: center;
+                gap: 8px;
+
+                @media (max-width: $breakpoint560) {
+                    flex-wrap: wrap;
+                    gap: 5px;
+                }
+
+                &-hr{
+                    background-color: #828282;
+                    width: 2px;
+                    height: 18px;
+                    margin-right: 5px;
+                }
+
+                &-link{
+                    font-family: 'Roboto';
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: 20px;
+                    line-height: 24px;
+                    letter-spacing: -0.42px;
+                    color: #828282;
+                    transition: all ease .3s;
+    
+                    &:hover{
+                        color: #68EC50;
+                    }
+
+                    @media (max-width: $breakpoint560) {
+                        font-size: 17px;
+                    }
+                }
+
+            }
+        }
+
+    }
+
+}
